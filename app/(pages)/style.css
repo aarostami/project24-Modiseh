@@ -1,0 +1,72 @@
+body {
+	overflow: unset;
+}
+
+.Container {
+	/* background-image: url('../images/hero-banner-bg.png'); */
+}
+
+header section {
+	background: linear-gradient(to right, rgb(109 41 197 / 85%), rgb(54 13 209 / 85%));
+	color: white;
+	height: 65vh;
+	display: flex;
+	flex-direction: column;
+}
+
+#list input {
+	vertical-align: middle;
+}
+
+#customcheck {
+	display: block;
+  	position: relative;
+  	width: 25px;
+	height: 25px;
+}
+
+#customcheck .ch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+}
+
+#customcheck input {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#customcheck input:checked ~ .ch {
+	background-color: #bc264b;
+}
+
+#customcheck .ch:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+#customcheck input:checked ~ .ch:after {
+	display: block;
+}
+
+#customcheck .ch:after {
+	left: 7px;
+	top: 0px;
+	width: 10px;
+	height: 20px;
+	border: solid #ffffff;
+  	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+/* .imagebox {
+	background-size: contain;
+	filter: brightness(0.5);
+	background: red;
+} */

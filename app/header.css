@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Mj_Anoosh;
+	src: url('fonts/Mj_Anoosh.ttf') format('truetype');
+}
+
+.button:hover {
+	background-color: #1b095a;
+	border-color: #1b095a;
+}
+
+.Container {
+	/* background-image: url('images/hero-banner-bg.png'); */
+}
+
+header section {
+	background: linear-gradient(to right, rgb(109 41 197 / 85%), rgb(54 13 209 / 85%));
+	/* opacity: 0.6; */
+	/* dislay: flex; */
+	color: white;
+	/* justify-content: center; */
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+section .leftList {
+	list-style-type: none;
+	justify-self: end;
+}
+
+section .centerList li a {
+	display: flex;
+	align-items: center;
+	height: 5rem;
+	font-size: 1.1rem;
+	font-weight: lighter;
+	border-top: 4px solid transparent;
+}
+
+section .centerList li:first-child a {
+	border-top: 4px solid white;
+}
+
+section .centerList li a:hover {
+	border-top: 4px solid white;
+}
+
+.main {
+	background-color: white;
+}
+
+.main section {
+	/* 	display: flex;
+	justify-content: center;
+	align-items: center; */
+	/* padding-top: 5rem;
+	padding-bottom: 5rem; */
+}
+
+.main .search a {
+	padding: 1.3rem 3.7rem;
+	background-color: #1b095a;
+	color: white;
+}
+
+.main .services .ServiceBox:hover {
+	box-shadow: 0px 0px 20px #bbb;
+}
+
+.main .prices {
+	/* background-image: url('images/priceTable-bg.png'); */
+	padding: 0;
+}
+
+.main .prices .pricesCover {
+	background: linear-gradient(to right, rgb(109 41 197 / 85%), rgb(54 13 209 / 85%));
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.main .myswiper .swiper-pagination span {
+	background-color: #272727;
+	opacity: 1;
+}
+
+.main .myswiper .swiper-pagination .swiper-pagination-bullet-active {
+	width: 1.5rem;
+	border-radius: 30px;
+	background-color: #ff2e2e;
+}
+
+section aside {
+	box-shadow: 5px 5px 15px #eeeeee, -5px -5px 15px #eeeeee;
+}
+
+@media screen and (max-width: 768px) {
+	header div div div img {
+		display: block;
+		width: 85% !important;
+		margin: auto auto !important;
+	}
+
+	.main .myswiper .swiper-pagination {
+		position: static;
+	}
+}
